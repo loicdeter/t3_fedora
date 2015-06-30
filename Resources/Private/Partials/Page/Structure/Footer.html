@@ -1,0 +1,32 @@
+<footer class="container-fluid">
+<section class="container-fluid add-wrap">
+	<div class="container">
+		<div class="col-md-4 addr-content main-ofc">
+			<f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '10'}"/>
+		</div>
+
+		<div class="col-md-4 addr-content second-ofc">
+			<f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '11'}"/>
+		</div>
+
+		<div class="col-md-4 addr-content third-ofc">
+			<f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '12'}"/>
+		</div>
+	</div>
+</section>
+
+<a id="gotop" class="goingUP" href="#">
+	<i class="fa fa-chevron-up"></i>
+</a>
+	
+<section class="meta-section">
+	<div class="row">
+		<f:if condition="{themeCopyright}">
+			<div class="text-center copyright" role="contentinfo">
+				<f:format.html>{themeCopyrightText}</f:format.html>
+			</div>
+		</f:if>
+	</div>
+</section>
+</footer>
+	<!-- footer Ends -->

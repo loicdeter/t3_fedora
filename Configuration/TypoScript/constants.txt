@@ -1,0 +1,12 @@
+##################################
+#### BOOTSTRAP LESS CONSTANTS ####
+##################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_fedora/Configuration/TypoScript/Bootstrap/constants.txt">
+
+page {
+	fluidtemplate {
+		layoutRootPath = EXT:t3_fedora/Resources/Private/Layouts/Page/
+		templateRootPath = EXT:t3_fedora/Resources/Private/Templates/Page/
+		partialRootPath = EXT:t3_fedora/Resources/Private/Partials/Page/
+	}
+}

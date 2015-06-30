@@ -1,0 +1,49 @@
+<header>
+	<div class="navbar-header">
+		<f:if condition="{f:cObject(typoscriptObjectPath:'lib.navigation.main')}">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand" href="index.html">Fedora</a>
+            </div>
+		</f:if>
+		<f:if condition="{logoFile}">
+			<f:then>
+				<f:link.page pageUid="{rootPage}" class="navbar-brand navbar-brand-image">
+					<img src="{f:uri.image(src: logoFile)}" alt="{logoAlt}" height="{logoHeight}" width="{logoWidth}">
+				</f:link.page>
+			</f:then>
+			<f:else>
+				<f:link.page pageUid="{rootPage}" class="navbar-brand">{siteTitle}</f:link.page>
+			</f:else>
+		</f:if>
+        <div class="collapse navbar-collapse">
+            <f:cObject typoscriptObjectPath="lib.navigation.main"/>
+		</div>
+		
+		
+		<!-- navbar Ends -->
+				<ul class="nav navbar-nav">		
+					<!-- menu starts -->
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">TITRE <span class="caret"></span></a>
+						<ul class="dropdown-menu Submenu" role="menu">
+							<!-- ligne sous-menu Starts -->
+							<li>
+								<a class="col-md-3 col-sm-12 col-xs-12" href="#"><img width="100" src="./images/image.png"></img></a>
+								<div class="col-md-9">
+									<a href="#">Titre</a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas</p>
+								</div>
+							</li>
+							<!-- ligne sous-menu Ends -->
+						</ul>
+					</li>
+					<!-- menu Ends -->
+				</ul>
+            </div>
+            <!-- navbar list Ends -->
+        

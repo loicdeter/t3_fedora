@@ -1,0 +1,37 @@
+<f:if condition="{showHeader}">
+<div class="wrapper">
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-brand" data-widget-class="navbar-brand" role="navigation">
+		<div class="container">
+			<!-- MAIN NAVIGATION -->
+			<f:render partial="Navigation/Main" arguments="{_all}"/>
+			<!-- END MAIN NAVIGATION -->
+		</div>
+	</nav>
+	<!-- END NAVBAR -->
+	
+	<!--?-->
+	<f:link.page class="sr-only sr-only-focusable" section="content">
+		{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}
+	</f:link.page>
+		<f:cObject typoscriptObjectPath="lib.navigation.breadcrumb"/>
+	<!--?-->
+	
+</f:if>
+
+	<div class="page-content" class="main-section">
+	<!--TYPO3SEARCH_begin-->
+
+		<section id="p{data.uid}" class="{pageClass}">
+			<f:render section="Main"/>
+		</section>
+		<f:if condition="{onePage}">
+			<f:cObject typoscriptObjectPath="lib.content.onepage"/>
+		</f:if>
+
+		<!--TYPO3SEARCH_begin-->
+	</div>
+	<f:if condition="{showFooter}">
+		<f:render partial="Structure/Footer" arguments="{_all}"/>
+	</f:if>
+</div>

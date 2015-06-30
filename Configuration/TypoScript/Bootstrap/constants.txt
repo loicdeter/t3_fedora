@@ -1,0 +1,15 @@
+plugin.bootstrap_package {
+	settings {
+		less {
+			text-color = #4a4a4a
+			link-color = #406da4
+
+			heading-color = #474747
+			heading-font-family: "Roboto Condensed", sans-serif
+			font-family-sans-serif = "Open Sans", sans-serif
+			font-family-serif = Georgia, "Times New Roman", Times, serif
+			font-family-monospace = Menlo, Monaco, Consolas, "Courier New", monospace
+			font-family-base = @font-family-sans-serif
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.navbar-toggle .icon-bar {
+    -webkit-transition: opacity 200ms cubic-bezier(0.7, 0, 0, .7), top, -webkit-transform;
+    -moz-transition: opacity 200ms cubic-bezier(0.7, 0, 0, .7), top, -moz-transform;
+    -o-transition: opacity 200ms cubic-bezier(0.7, 0, 0, .7), top, -o-transform;
+    transition: opacity 200ms cubic-bezier(0.7, 0, 0, .7), top, transform;
+    position: relative;
+    top: 0
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+    top: 6px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+    opacity: 0
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+    top: -6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}

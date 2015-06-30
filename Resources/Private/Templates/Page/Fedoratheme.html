@@ -1,0 +1,50 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+	<section class="container-fluid hero-wrapper">
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '30'}" />
+	</section>
+	
+	<section class="container-fluid hero-login">
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3'}" />
+	</section>
+	
+	<section class="container feat-wrapper">
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+	</section>
+	
+	<section class="container-fluid why-wrapper"><!--?-->
+		<!--titre ici-->
+		<div class="col-md-6">
+			<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '31'}" />
+		</div>
+		<div class="col-md-6 vid-showcase">
+			<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '32'}" />
+		</div>
+	</section><!--?-->
+	
+	<section class="container-fluid cta-quotation">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '33'}" />
+    </section>
+	
+	<section class="container-fluid project-wrapper">
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '34'}" />
+	
+	</section>
+	
+	<section id="carousel" class="container-fluid testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+					<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '35'}" />
+				</div>
+            </div>
+        </div>
+    </section>
+	
+	<section id="support" class="container-fluid contact-wrapper">
+        <div class="container map-overlay">
+			<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '36'}" />
+		</div>
+    </section>
+</f:section>
